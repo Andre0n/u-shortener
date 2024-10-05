@@ -1,0 +1,14 @@
+{
+  "name": "node-shortener",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/server.ts --out-dir dist --minify",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts"
+  },
+  "keywords": [],
+  "author": "André Gabriel <dev.andregabriel@gmail.com>",
+  "license": "MIT"
+}
