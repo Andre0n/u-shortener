@@ -1,7 +1,8 @@
 import app from "./app";
+import config from './config';
 
-const server = app.listen(3000, () => {
-  console.log("App is running at http://localhost:3000");
+const server = app.listen(config.port, config.host, () => {
+  console.log(`Server running on ${config.baseUrl}`);
 });
 
 server.on("unhandledRejection", (err: Error) => {
